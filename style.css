@@ -8,10 +8,15 @@
   margin: 100px;
   display: inline-block;
   position: relative;
-  transition: all 1s linear;
+  animation: 1s heart infinite alternate-reverse;
 }
-#heart:hover {
-  transform: scale(1.2);
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 .bottom {
   border: 1px solid red;
